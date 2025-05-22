@@ -12,7 +12,14 @@ Projects completed during the Bachelor's and Master's studies in Telecommunicati
   - [Programação Orientada a Objetos](https://github.com/beatrizralves/UNI/tree/main/2_ano/POO)
  
 - 3st year
-  -
+  -[Criptografia e Segurança de Redes]()
+  -[Projeto Integrado Telecomunicações]()
+  -[Redes de Computadores I]()
+  -[Redes de Computadores II]()
+  -[Redes Moveis]()
+  -[Sistemas Distribuidos]()
+
+  
 - 4st year
   -
   
