@@ -8,8 +8,8 @@ Projects completed during the Bachelor's and Master's studies in Telecommunicati
   - [Metodos de Programação II](https://github.com/beatrizralves/UNI/tree/main/1_ano/Metodos_Programacao_II)
     
 - 2st year
-  - [Sistemas Operativos]
-  - [Programação Orientada a Objetos]
+  - [Sistemas Operativos](https://github.com/beatrizralves/UNI/tree/main/2_ano/SO)
+  - [Programação Orientada a Objetos](https://github.com/beatrizralves/UNI/tree/main/2_ano/POO)
  
 - 3st year
   -
