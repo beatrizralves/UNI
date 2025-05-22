@@ -16,8 +16,8 @@ Projects completed during the Bachelor's and Master's studies in Telecommunicati
   - [Projeto Integrado Telecomunicações](https://github.com/beatrizralves/UNI/tree/main/3_ano/Projeto_Integrado_Telecomunica%C3%A7%C3%B5es)
   - [Redes de Computadores I](https://github.com/beatrizralves/UNI/tree/main/3_ano/Redes_Computadores_I)
   - [Redes de Computadores II](https://github.com/beatrizralves/UNI/tree/main/3_ano/Redes_Computadores_II)
-  - [Redes Moveis]()
-  - [Sistemas Distribuidos]()
+  - [Redes Moveis](https://github.com/beatrizralves/UNI/tree/main/3_ano/Redes_Moveis)
+  - [Sistemas Distribuidos](https://github.com/beatrizralves/UNI/tree/main/3_ano/Sistemas_Distribuidos)
 
   
 - 4st year
