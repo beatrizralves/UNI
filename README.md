@@ -21,5 +21,8 @@ Projects completed during the Bachelor's and Master's studies in Telecommunicati
 
   
 - 4st year
-  -
+  - [Cibersegurança]()
+  - [Redes Veiculares]()
+  - [Serviços de Rede e Aplicações Multimédia]()
+  - [Virtualização de Redes]()
   
