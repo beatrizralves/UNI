@@ -1,0 +1,105 @@
+'--socket' not provided, using ipc:///tmp/bm-0-log.ipc (obtained from switch)
+Obtaining JSON from switch...
+Done
+type: PACKET_IN, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, port_in: 1
+type: PARSER_START, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, parser_id: 0 (parser)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, header_id: 2 (ethernet)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, header_id: 3 (ipv4)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, header_id: 4 (tcp)
+type: PARSER_DONE, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, parser_id: 0 (parser)
+type: PIPELINE_START, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, pipeline_id: 0 (ingress)
+type: CONDITION_EVAL, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, condition_id: 0 (node_2), result: True
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, table_id: 0 (MyIngress.ipv4_lpm), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, action_id: 5 (MyIngress.ipv4_fwd)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, table_id: 1 (MyIngress.src_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, action_id: 6 (MyIngress.rewrite_src_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, table_id: 2 (MyIngress.dst_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, action_id: 7 (MyIngress.rewrite_dst_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, table_id: 3 (MyIngress.firewall), entry_hdl: 2
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, action_id: 4 (MyIngress.drop)
+type: PIPELINE_DONE, switch_id: 0, cxt_id: 0, sig: 17906100540550552539, id: 63397, copy_id: 0, pipeline_id: 0 (ingress)
+type: PACKET_IN, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, port_in: 1
+type: PARSER_START, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, parser_id: 0 (parser)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, header_id: 2 (ethernet)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, header_id: 3 (ipv4)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, header_id: 4 (tcp)
+type: PARSER_DONE, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, parser_id: 0 (parser)
+type: PIPELINE_START, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, pipeline_id: 0 (ingress)
+type: CONDITION_EVAL, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, condition_id: 0 (node_2), result: True
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, table_id: 0 (MyIngress.ipv4_lpm), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, action_id: 5 (MyIngress.ipv4_fwd)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, table_id: 1 (MyIngress.src_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, action_id: 6 (MyIngress.rewrite_src_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, table_id: 2 (MyIngress.dst_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, action_id: 7 (MyIngress.rewrite_dst_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, table_id: 3 (MyIngress.firewall), entry_hdl: 2
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, action_id: 4 (MyIngress.drop)
+type: PIPELINE_DONE, switch_id: 0, cxt_id: 0, sig: 15626768489034157102, id: 63398, copy_id: 0, pipeline_id: 0 (ingress)
+type: PACKET_IN, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, port_in: 1
+type: PARSER_START, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, parser_id: 0 (parser)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, header_id: 2 (ethernet)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, header_id: 3 (ipv4)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, header_id: 4 (tcp)
+type: PARSER_DONE, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, parser_id: 0 (parser)
+type: PIPELINE_START, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, pipeline_id: 0 (ingress)
+type: CONDITION_EVAL, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, condition_id: 0 (node_2), result: True
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, table_id: 0 (MyIngress.ipv4_lpm), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, action_id: 5 (MyIngress.ipv4_fwd)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, table_id: 1 (MyIngress.src_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, action_id: 6 (MyIngress.rewrite_src_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, table_id: 2 (MyIngress.dst_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, action_id: 7 (MyIngress.rewrite_dst_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, table_id: 3 (MyIngress.firewall), entry_hdl: 2
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, action_id: 4 (MyIngress.drop)
+type: PIPELINE_DONE, switch_id: 0, cxt_id: 0, sig: 9538905026835693932, id: 63399, copy_id: 0, pipeline_id: 0 (ingress)
+type: PACKET_IN, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, port_in: 1
+type: PARSER_START, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, parser_id: 0 (parser)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, header_id: 2 (ethernet)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, header_id: 3 (ipv4)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, header_id: 4 (tcp)
+type: PARSER_DONE, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, parser_id: 0 (parser)
+type: PIPELINE_START, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, pipeline_id: 0 (ingress)
+type: CONDITION_EVAL, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, condition_id: 0 (node_2), result: True
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, table_id: 0 (MyIngress.ipv4_lpm), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, action_id: 5 (MyIngress.ipv4_fwd)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, table_id: 1 (MyIngress.src_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, action_id: 6 (MyIngress.rewrite_src_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, table_id: 2 (MyIngress.dst_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, action_id: 7 (MyIngress.rewrite_dst_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, table_id: 3 (MyIngress.firewall), entry_hdl: 2
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, action_id: 4 (MyIngress.drop)
+type: PIPELINE_DONE, switch_id: 0, cxt_id: 0, sig: 10817939740275183636, id: 63400, copy_id: 0, pipeline_id: 0 (ingress)
+type: PACKET_IN, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, port_in: 1
+type: PARSER_START, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, parser_id: 0 (parser)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, header_id: 2 (ethernet)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, header_id: 3 (ipv4)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, header_id: 4 (tcp)
+type: PARSER_DONE, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, parser_id: 0 (parser)
+type: PIPELINE_START, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, pipeline_id: 0 (ingress)
+type: CONDITION_EVAL, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, condition_id: 0 (node_2), result: True
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, table_id: 0 (MyIngress.ipv4_lpm), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, action_id: 5 (MyIngress.ipv4_fwd)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, table_id: 1 (MyIngress.src_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, action_id: 6 (MyIngress.rewrite_src_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, table_id: 2 (MyIngress.dst_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, action_id: 7 (MyIngress.rewrite_dst_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, table_id: 3 (MyIngress.firewall), entry_hdl: 2
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, action_id: 4 (MyIngress.drop)
+type: PIPELINE_DONE, switch_id: 0, cxt_id: 0, sig: 12617312665622356721, id: 63401, copy_id: 0, pipeline_id: 0 (ingress)
+type: PACKET_IN, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, port_in: 1
+type: PARSER_START, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, parser_id: 0 (parser)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, header_id: 2 (ethernet)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, header_id: 3 (ipv4)
+type: PARSER_EXTRACT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, header_id: 4 (tcp)
+type: PARSER_DONE, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, parser_id: 0 (parser)
+type: PIPELINE_START, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, pipeline_id: 0 (ingress)
+type: CONDITION_EVAL, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, condition_id: 0 (node_2), result: True
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, table_id: 0 (MyIngress.ipv4_lpm), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, action_id: 5 (MyIngress.ipv4_fwd)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, table_id: 1 (MyIngress.src_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, action_id: 6 (MyIngress.rewrite_src_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, table_id: 2 (MyIngress.dst_mac), entry_hdl: 1
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, action_id: 7 (MyIngress.rewrite_dst_mac)
+type: TABLE_HIT, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, table_id: 3 (MyIngress.firewall), entry_hdl: 2
+type: ACTION_EXECUTE, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, action_id: 4 (MyIngress.drop)
+type: PIPELINE_DONE, switch_id: 0, cxt_id: 0, sig: 11804973685969647368, id: 63402, copy_id: 0, pipeline_id: 0 (ingress)
