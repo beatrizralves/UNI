@@ -21,8 +21,8 @@ Projects completed during the Bachelor's and Master's studies in Telecommunicati
 
   
 - 4st year
-  - [Cibersegurança]()
-  - [Redes Veiculares]()
-  - [Serviços de Rede e Aplicações Multimédia]()
-  - [Virtualização de Redes]()
+  - [Cibersegurança](https://github.com/beatrizralves/UNI/tree/main/4_ano/Ciberseguranca)
+  - [Redes Veiculares](https://github.com/beatrizralves/UNI/tree/main/4_ano/Redes_Veiculares)
+  - [Serviços de Rede e Aplicações Multimédia](https://github.com/beatrizralves/UNI/tree/main/4_ano/Servicos_Rede_Aplicacoes_Multimedia)
+  - [Virtualização de Redes](https://github.com/beatrizralves/UNI/tree/main/4_ano/Virtualizacao_Redes)
   
