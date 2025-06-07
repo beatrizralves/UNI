@@ -1,0 +1,276 @@
+{
+  "prototypes": [
+    {
+      "name": "Car",
+      "color": "pink",
+      "applications": [
+        "CamSendingApp",
+        "V2XmsgApp"
+      ]
+    },
+    {
+      "name": "RSU",
+      "communication": [
+        "cellular"
+      ],
+      "applications": [
+        "RoadSideUnitApp"
+      ]
+    },
+    {
+      "name": "FogNode",
+      "communication": [
+        "cellular"
+      ],
+      "applications": [
+        "FogNodeApp"
+      ]
+    }
+  ],
+  "trafficLights": [
+    {
+      "applications": [
+        "TrafficLightControlApp"
+      ]
+    }
+  ],
+  "rsus": [
+    {
+      "name": "RSU",
+      "position": {
+        "latitude": 41.456239,
+        "longitude": -8.295584
+      }
+    },
+    {
+      "name": "FogNode",
+      "position": {
+        "latitude": 41.456239,
+        "longitude": -8.295584
+      }
+    }
+  ],
+  "vehicles": [
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_0"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_1"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_2"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_3"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_4"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_5"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_6"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_7"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_8"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_9"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_10"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_11"
+    },
+    {
+      "startingTime": "0 s",
+      "targetFlow": 600.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 1,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+          "name": "Car"
+        }
+      ],
+      "departConnectionIndex": 0,
+      "pos": 0,
+      "route": "r_12"
+    }
+  ]
+}

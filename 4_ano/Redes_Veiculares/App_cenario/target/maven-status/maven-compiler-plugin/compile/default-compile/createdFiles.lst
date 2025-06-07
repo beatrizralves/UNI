@@ -1,0 +1,9 @@
+FogNodeApp$Vehicle.class
+RoadSideUnitApp.class
+TrafficLightControlApp.class
+org\eclipse\mosaic\app\tutorial\message\InterVehicleMsg.class
+org\eclipse\mosaic\app\tutorial\message\GreenWaveMsg.class
+CamSendingApp$MyComplexTaggedValue.class
+CamSendingApp.class
+V2XmsgApp.class
+FogNodeApp.class
