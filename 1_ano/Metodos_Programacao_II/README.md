@@ -4,7 +4,7 @@ This is a console-based system written in C that allows users to manage **tasks*
 
 ## Features
 
-### ✅ Task Management
+###  Task Management
 
 * Create tasks with categories: *School*, *Professional*, *Personal*, *Family*, *Leisure*
 * Edit and delete existing tasks
@@ -19,7 +19,7 @@ This is a console-based system written in C that allows users to manage **tasks*
   * Tasks in a date interval
 * Dynamically add new task types
 
-### 👤 Collaborator Management
+### Collaborator Management
 
 * Add new collaborators with:
 
@@ -31,7 +31,7 @@ This is a console-based system written in C that allows users to manage **tasks*
 * Remove collaborators from the system
 * Link a collaborator to a task
 
-### 💾 File Storage
+### File Storage
 
 * Tasks are stored in a binary file `tarefa.bin`
 * Collaborators are stored in a text file `Colaboradores.txt`
