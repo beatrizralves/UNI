@@ -12,13 +12,11 @@ Projects completed during the Bachelor's and Master's studies in Telecommunicati
   - [Programação Orientada a Objetos](https://github.com/beatrizralves/UNI/tree/main/2_ano/POO)
  
 - 3st year
-  - [Criptografia e Segurança de Redes](https://github.com/beatrizralves/UNI/tree/main/3_ano/Criptografia_Seguranca_Redes)
   - [Projeto Integrado Telecomunicações](https://github.com/beatrizralves/UNI/tree/main/3_ano/Projeto_Integrado_Telecomunica%C3%A7%C3%B5es)
   - [Sistemas Distribuidos](https://github.com/beatrizralves/UNI/tree/main/3_ano/Sistemas_Distribuidos)
 
   
 - 4st year
-  - [Cibersegurança](https://github.com/beatrizralves/UNI/tree/main/4_ano/Ciberseguranca)
   - [Redes Veiculares](https://github.com/beatrizralves/UNI/tree/main/4_ano/Redes_Veiculares)
   - [Serviços de Rede e Aplicações Multimédia](https://github.com/beatrizralves/UNI/tree/main/4_ano/Servicos_Rede_Aplicacoes_Multimedia)
   - [Virtualização de Redes](https://github.com/beatrizralves/UNI/tree/main/4_ano/Virtualizacao_Redes)
