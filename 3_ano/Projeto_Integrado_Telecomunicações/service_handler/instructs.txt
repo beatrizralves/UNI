@@ -1,0 +1,28 @@
+
+npx prisma generate -> gera objeto @prisma/client
+npx prisma db push
+
+
+
+gcc compile service handler:
+gcc -I"C:\Program Files\MySQL\MySQL Server 8.0\include" -o servico service_handler.c cJSON.c -L"C:\Program Files\MySQL\MySQL Server 8.0\lib" -lmysql -lws2_32 -w -lm -lcurl
+
+
+-instalar docker
+-ver comando para criar container MySQL
+-opcional criar base de dados na shell
+- correr react: npm run dev
+
+
+
+Problemas a corrigir:
+-> Arranjar biblioteca de sockets para arduino
+-> Gestor de Serviços tem que saber que sistemas estão a comunicar com ele
+-> Conectar o Gestor de Serviço diretamente à base de dados
+-> Quando um SS se liga ao GS, nao envia leituras até que o GS lhe de sinal START
+
+Colocar container Docker a correr:
+-> docker pull mysql 
+-> docker run -p 8086:3306 --name pitdb -e MYSQL_ROOT_PASSWORD=root -d mysql
+-> docker ps (para verificar que esta a correr)
+-> docker exec -it <mycontainer> bash (aceder a bash de um containerc)

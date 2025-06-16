@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model leitura {
+  id_leitura Int    @id @default(autoincrement())
+  id_sensor  Int
+  timestamp  String @db.VarChar(200)
+  dados      String @db.VarChar(100)
+  sensor     sensor @relation(fields: [id_sensor], references: [id_sensor], onDelete: NoAction, onUpdate: NoAction, map: "leitura_ibfk_1")
+
+  @@index([id_sensor], map: "id_sensor")
+}
+
+model sensor {
+  id_sensor      Int            @id @default(autoincrement())
+  id_SS          Int
+  nome_sensor    String         @db.VarChar(100)
+  estado         String         @db.VarChar(100)
+  leitura        leitura[]
+  sistema_sensor sistema_sensor @relation(fields: [id_SS], references: [id_SS], onDelete: NoAction, onUpdate: NoAction, map: "sensor_ibfk_1")
+
+  @@index([id_SS], map: "id_SS")
+}
+
+model sistema_sensor {
+  id_SS               Int      @id
+  nome_sistema_sensor String   @db.VarChar(100)
+  tipo                String   @db.VarChar(100)
+  estado              String   @db.VarChar(100)
+  sensor              sensor[]
+}
+
+model utilizador {
+  id_user  Int    @id @default(autoincrement())
+  username String @db.VarChar(100)
+  password String @db.VarChar(100)
+  tipo_utilizador Int
+}
