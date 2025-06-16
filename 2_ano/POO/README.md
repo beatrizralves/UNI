@@ -1,7 +1,7 @@
 ## TouChim
 Simulation of an company of devices
 
-## 💡 Features
+## Features
 
 * Manage clients and accounts
 * Simulate different communication types:
@@ -9,6 +9,10 @@ Simulation of an company of devices
   * SMS
   * Image and video messages
   * Downloads
-* Different device types
+* Different device types:
+  * Oldie
+  * Tablet
+  * Telemovel
+ 
 
 
