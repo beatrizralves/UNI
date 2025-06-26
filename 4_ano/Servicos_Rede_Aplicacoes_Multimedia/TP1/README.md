@@ -1,61 +1,73 @@
-# Multimedia Transport Protocol
 
-This project implements a UDP-based communication system that transmits images from a server to a client through an intermediate forwarder. The system simulates packet loss, transmission pauses, and automatic resynchronization, aiming to test fault tolerance and synchronization mechanisms over unstable networks.
+# LZWdR Compression
 
----
+## Description
 
-### Key Parameters
+This project implements the LZWdR compression algorithm, a variation of the LZW algorithm that uses a dynamic dictionary for file compression. Its goal is to efficiently compress textual data by exploiting repeated patterns to reduce the final file size.
 
-* `F`: Frequency factor controlling the interval between image transmissions (`10^(-F)` seconds between frames).
-* `A`: Display delay per frame (milliseconds).
-* `N`: Number of frames after which the forwarder pauses.
-* `P`: Pause duration in seconds.
-* `M`: Interval (in seconds) between simulated packet losses by the forwarder.
+The implementation is in C++ and uses a linked list–based data structure for the dictionary. The project includes functions for initializing, inserting, searching, and cleaning up the dictionary, as well as support for statistics collection and execution time measurement.
 
 ---
 
-## How It Works
+## Features
 
-### Server (`server.py`)
+* File compression using the LZWdR algorithm.
+* Dynamic dictionary structure based on linked lists.
+* Collection and display of compression statistics.
+* Execution time measurement.
+---
 
-* Dynamically generates an **image clock** showing the current time (e.g., `12:34:56:78`).
-* Builds an image by composing PNG digits located in the `digitos/` directory.
-* Supports fractional seconds based on the value of `F` (e.g., `F=2` → shows centiseconds).
-* Encodes the image and sends it via UDP to the forwarder, in the form of a **Protocol Data Unit (PDU)**.
+## Function Table – Compression Process
 
-#### PDU Format
-
-| Field | Size     | Description                                         |
-| ----- | -------- | --------------------------------------------------- |
-| `F`   | 1 byte   | Precision level (number of digits for milliseconds) |
-| `A`   | 2 bytes  | Display delay in milliseconds                       |
-| Image | variable | Binary-encoded PNG image of the clock               |
+| Function                          | Purpose                                              |
+| --------------------------------- | ---------------------------------------------------- |
+| `void LZWDR(...)`                 | Main compression routine using LZWdR.                |
+| `void Comprimir(...)`             | Performs compression using the dictionary.           |
+| `void InicializarDicionario(...)` | Initializes the dictionary with base patterns.       |
+| `void LimparDicionario(...)`      | Cleans up dictionary memory.                         |
+| `EntradaDicionario* search(...)`  | Searches for a pattern in the dictionary.            |
+| `EntradaDicionario* insert(...)`  | Inserts a new pattern into the dictionary.           |
+| `void output(...)`                | Appends the code for a pattern to the output buffer. |
+| `String concat(...)`              | Concatenates two pattern strings.                    |
+| `String reverse(...)`             | Reverses a pattern string.                           |
 
 ---
 
-### Forwarder (`reencaminhador.py`)
+## Function Table – Statistics and Utilities
 
-* Listens for UDP packets (PDUs) from the server.
-* Buffers incoming frames using a queue.
-* Simulates **packet loss** by discarding one PDU every `M` seconds.
-* Simulates **pauses** by halting transmission for `P` seconds after every `N` frames.
-* Forwards valid PDUs from the buffer to the client.
+| Function                                         | Purpose                                              |
+| ------------------------------------------------ | ---------------------------------------------------- |
+| `void statics()`                                 | Collects statistics during compression.              |
+| `double ObterDiferencaTempoSegundos(...)`        | Calculates time difference in seconds.               |
+| `void ImprimirLogotipo()`                        | Prints a logo or banner to the terminal.             |
+| `void printParameters(...)`                      | Displays input/output file information.              |
+| `void ImprimeArgErro()`                          | Prints error messages for invalid command-line args. |
+| `void printTime()`                               | Prints the current system time.                      |
+| `void imprimeDicionario(...)`                    | Displays the entire dictionary content.              |
+| `void imprimePadrao(...)`                        | Prints a single dictionary entry.                    |
+| `void printStatics(...)`                         | Displays final compression statistics.               |
+| `unsigned int ObterFicheiroProcessadoBytes(...)` | Calculates size (in bytes) of the processed file.    |
+
+---
+
+## Compilation
+
+```
+g++ tp1.cpp -o tp1
+```
+---
+
+## Usage
+
+```
+./tp1 input.txt output.txt <max_Block> <max_Dic> <init_Dic> <type_cleanDic>
+```
+
+`Maximum block size must be between ]0, 67109056] bytes;`
+`Maximum dictionary size must be between [4096, 16777216];`
+`Initial dictionary type must be 0-LWDR;`
+`Dictionary cleaning type must be 0-none, 1-reset`
 
 ---
 
-### Client (`client.py`)
-
-* Receives PDUs and extracts:
-
-  * Control fields: `F`, `A`
-  * Image payload (PNG)
-* Maintains a **timed buffer** of frames.
-* Displays frames after their delay `A` has passed.
-* If the buffer exceeds a threshold (computed from `F` and `A`), it **resynchronizes**:
-
-  * Waits for `A` ms
-  * Clears the buffer
-  * Resumes receiving
-
----
 
