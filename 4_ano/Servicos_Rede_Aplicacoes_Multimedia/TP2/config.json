@@ -1,0 +1,21 @@
+{
+    "server": {
+        "ip": "localhost",
+        "port": 12345,
+        "F": 0,
+        "A": 10
+    },
+    "forwarder": {
+        "SERVER_IP": "localhost",
+        "SERVER_PORT": 12345,
+        "CLIENT_IP": "localhost",
+        "CLIENT_PORT": 12346,
+        "N": 10,
+        "P": 10,
+        "M": 5
+    },
+    "client": {
+        "ip": "localhost",
+        "port": 12346
+    }
+}
