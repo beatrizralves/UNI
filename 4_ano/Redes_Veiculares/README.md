@@ -32,6 +32,9 @@ The algorithm simulates the future position of vehicles and generates alerts if 
 
 The traffic light is forced to turn red if there is a risk of collision.  
 
+### Scenario 
+<img width="400" height="350" alt="Scenario" src="https://github.com/user-attachments/assets/efd163fd-05d0-4daa-91ff-0f5b0a8b2b1a" />
+
 
 
   
